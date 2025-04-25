@@ -14,7 +14,7 @@ const SignIn_Screen:React.FC =()=>{
     const [checked,setChecked] = React.useState(false);
 
     const onSignUp =()=>{
-
+      console.log("Sign Up Pressed")
     }
     return(
         <ScrollView style={styles.container}>
