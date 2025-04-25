@@ -5,11 +5,8 @@ import { colors } from "../../../utils/colors";
 import { Dimensions } from "react-native";
 import AuthHeader from "../../../component/authHeader";
 import Input from "../../../component/input";
-import CheckBox from "../../../component/checkBox/checkBox";
 import Seperator from "../../../component/seperator";
-import googleButton from "../../../component/googleButton";
 import GoogleButton from "../../../component/googleButton";
-
 
 const {width,height} = Dimensions.get('window');
 const SignIn_Screen:React.FC =()=>{
@@ -24,12 +21,9 @@ const SignIn_Screen:React.FC =()=>{
              <AuthHeader title='Sign In' style={{bottom:17}}  />
              <Input label="E-mail" placeholder="example@gmail.com"/>
              <Input isPassword label="Password" placeholder="Password"/>
-
-              
              <Button
               style={styles.button}
               title="Sign In" onPress={()=>console.log("Sign Up Pressed")}/>
-
               <Seperator text='Or sign in with'/>
               <View style={styles.googleButton}>
               <GoogleButton/>
